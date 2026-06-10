@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sistema Acadêmico</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+
+        <div>
+            <h1>Sistema Acadêmico</h1>
+            <p>Gerenciamento de alunos</p>
+        </div>
+
+        <div class="escola">
+            P.E.I. Bertha Corrêa e Castro Rocha
+        </div>
+
+    </header>
+
+    <section class="stats">
+
+        <div class="card">
+            <h2 id="totalAlunos">0</h2>
+            <span>Alunos Cadastrados</span>
+        </div>
+
+        <div class="card">
+            <h2 id="totalTurmas">0</h2>
+            <span>Turmas</span>
+        </div>
+
+    </section>
+
+    <section class="formulario">
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Nome Completo"
+        >
+
+        <input
+            type="text"
+            id="ra"
+            placeholder="RA"
+        >
+
+        <input
+            type="text"
+            id="turma"
+            placeholder="Turma"
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email"
+        >
+
+        <button onclick="salvarAluno()">
+            Salvar Aluno
+        </button>
+
+    </section>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>RA</th>
+                <th>Turma</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody id="listaAlunos">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
